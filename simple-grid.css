@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  grid: "nav header header" 10vh "nav main aside" 40vh "footer footer footer" 10vh/minmax(20%, 200px) 1fr minmax(20%, 200px);
+}
+body header {
+  grid-area: header;
+  background-color: aqua;
+}
+body nav {
+  grid-area: nav;
+  background-color: bisque;
+}
+body main {
+  grid-area: main;
+  background-color: burlywood;
+}
+body footer {
+  grid-area: footer;
+  background-color: aquamarine;
+}
+body aside {
+  grid-area: aside;
+  background-color: cadetblue;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid: "header" 10vh "nav" 10vh "main" 40vh "footer" 10vh "aside" 10vh;
+  }
+}/*# sourceMappingURL=simple-grid.css.map */
